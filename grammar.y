@@ -83,10 +83,10 @@ while : T_WHILE l_expr stmt
 repeat : T_REPEAT stmt_list T_UNTIL l_expr
   ;
 
-if_stmt : 
+if_stmt : T_IF l_expr T_THEN stmt
   ;
 
-else_stmt : 
+else_stmt : T_ELSE stmt
   |
   ;
 
