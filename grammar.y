@@ -80,7 +80,7 @@ foreach : T_FOREACH T_ID
 while : T_WHILE l_expr stmt
     ;
 
-repeat : 
+repeat : T_REPEAT stmt_list T_UNTIL l_expr
   ;
 
 if_stmt : 
