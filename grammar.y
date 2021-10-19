@@ -71,13 +71,13 @@ stmt : assignment
 block : T_BEGIN stmt_list T_END
   ;
 
-foreach : T_FOREACH 
+foreach : T_FOREACH T_ID 
           T_IN 
-          '(' ':' ')' 
+          '(' T_NUM ':' T_ID ')' 
           stmt
     ;
 
-while : 
+while : T_WHILE l_expr stmt
     ;
 
 repeat : 
